@@ -1,0 +1,41 @@
+.heightfixing{
+    height: 100vh;
+    background-color: #F8F8F8;
+}
+.manageprofile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.profilecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: red;
+    
+    padding:20px;
+    width: 100%;
+}
+.updateprofileinput{
+    /* width: 1000px; */
+    width: 100%;
+    border: 3px solid #555;
+} 
+.updateprofilebutton{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    /* background-color: red; */
+    justify-content: flex-end;
+}
+.updatebutton{
+    background-color: red;
+    padding: 15px;
+    color: white;
+    margin-right: 30px;
+}
+

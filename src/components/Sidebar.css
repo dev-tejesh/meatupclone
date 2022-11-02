@@ -1,0 +1,94 @@
+.sidebar{
+    position: absolute;
+    background-color:#F8F8FF;
+    color: #F8F8F8;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+
+    width: 90%;
+    max-width: 270px;
+    transform: translateX(-100%);
+    transition:all 0.4s;
+    z-index: 20;
+
+}
+.heightredcolor{
+    display: flex;
+    height: 150px;
+    background-color: red;
+    justify-content: space-around;
+    padding-right: 30px;
+    flex-direction: column;
+}
+.heightredcolor li:hover{
+    color: none;
+    background-color: none;
+}
+.sidebar li{
+    list-style: none;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    font-weight: 300;
+}
+.sidebar li:hover{
+    
+    border: none;
+}
+.sidebar--open{
+    transform: translateX(0%);
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #f8f8f8; */
+    display: none;
+    filter:blur(100px);
+    /* z-index: 20; */
+}
+
+.backdrop--open{
+    display: block;
+}
+.sidebarsignin{
+    color: white;
+}
+.sidebarregistration{
+    color: white;
+}
+.heightredcolor li:hover{
+
+    color: inherit;
+}
+.combinedreg{
+    display: flex; 
+    align-items: flex-end;
+    justify-content: start;
+   
+}
+.crossmark{
+   
+    display: flex;
+    /* background-color: blue; */
+    justify-content: flex-end;
+    width: 90%;
+    max-width: 270px;
+    color: white;
+    margin-left: 27px;
+    padding-right: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    /* padding-left: 10px; */
+}
+.crossmark li:hover{
+    color: inherit;
+}
+.whitecolor{
+    color: white;
+}

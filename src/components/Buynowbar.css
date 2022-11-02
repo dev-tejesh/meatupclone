@@ -1,0 +1,39 @@
+.buynowbaritem{
+    display: flex;
+    height: 70px;
+    /* background-color: white; */
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+}
+.baritem{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.processtitle{
+    color: gray;
+    display: block;
+}
+@media screen and (min-width:400px) and (max-width: 600px) {
+    .baritem{
+        padding: 5px;
+        font-size: smaller;
+
+
+    }
+}
+@media screen and (max-width: 400px) {
+
+    .processtitle{
+        display: none;
+    }
+    .baritem{
+        font-size: larger;
+    }
+}

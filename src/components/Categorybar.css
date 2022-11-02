@@ -1,0 +1,39 @@
+.catflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    height: 50px;
+    box-shadow: 1px 1px 5px 0px gray;
+}
+.liststyle{
+    /* margin: 0;rg */
+    padding: 0;
+    height: 50px;
+    list-style: none;
+    font-size: 20px;
+    color: red;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    margin: 30px;
+}
+ li:hover {
+    border-bottom: 3px solid red;
+  }
+hr.solid {
+    border-right: 0px solid gray;
+    height: 20px;
+  }
+  .swiper-container {
+    width: 50px;
+  }
+  @media screen and (min-width: 800px) {
+    .swiper-container {
+      width: 50px;
+    }
+  }
+
+
+  

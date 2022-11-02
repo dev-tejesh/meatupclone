@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Buynow from "./components/Buynow";
+import Categorybar from "./components/Categorybar";
+import Homepage from "./components/Homepage";
+import Chicken from "./components/items/Chicken";
+import Login from "./components/Login";
+import Navbar from "./components/Navbar";
+import Register from "./components/Register";
+import Topbar from "./components/Topbar";
+import { Routes, Route } from "react-router-dom";
+import "./index.css";
+import Buynowbar from "./components/Buynowbar";
+import Manageprofile from "./components/Manageprofile";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/buynow" element={<Buynow />} />
+        <Route path="/home" element={<Homepage />} />
+        <Route path="/chicken" element={<Chicken />} />
+        <Route path="/myprofile" element={<Manageprofile/>} />
+      </Routes>
+      {/* 
+      <Topbar/>
+        <Navbar/>
+        <Categorybar/> 
+        */}
+      {/* <Buynow/> */}
+      {/* <Login/> */}
+      {/* <Register/> */}
+      {/* <Homepage/> */}
+      {/* <Chicken/> */}
     </div>
   );
-}
+};
 
 export default App;

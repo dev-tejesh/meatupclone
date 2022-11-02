@@ -1,0 +1,102 @@
+.maincontainer {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+ padding-bottom: 50px;
+}
+.registercontainer {
+  height: auto;
+  background-color: white;
+  width: 700px;
+  min-width: 400px;
+  margin-top: 20px;
+  padding-top: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media screen and (max-width: 700px) {
+  .registercontainer {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width:1200px) {
+  .registercontainer{
+    width: 70%;
+  }
+}
+.registerinputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.checkinputs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: red;
+}
+.hello {
+  text-align: start;
+}
+.registerinput {
+  /* background-color: red; */
+  border: 2px solid #e9e9e9;
+  padding-right: 0px;
+  width: 90%;
+
+  margin-top: 10px;
+  text-indent: 10px;
+  display: flex;
+}
+.registertitle {
+  text-align: center;
+  font-size: large;
+  color: black;
+  font-weight: lighter;
+  margin-top:40px;
+  margin-bottom: 40px;
+}
+.check {
+  display: flex;
+  justify-content: start;
+  margin: 0px;
+  padding: 0px;
+}
+.empty {
+  background-color: red;
+  display: flex;
+}
+.ganesh {
+  display: flex;
+
+  background-color: red;
+}
+.createbutton {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: red;
+  cursor: pointer;
+  height: 40px;
+  width: 90%;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  
+}
+.combined{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.already{
+  font-size: small;
+  color: gray;
+}
+.registerpagelogin{
+  color: red;
+  text-decoration: none;
+  font-size: small;
+}
