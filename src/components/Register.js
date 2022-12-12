@@ -52,7 +52,7 @@ const Register = () => {
           </div>
           <div className="combined">
             <span className="already">Already have an account?</span>
-            <a href="" className="registerpagelogin">
+            <a href="/login" className="registerpagelogin">
               Log In
             </a>
           </div>

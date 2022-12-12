@@ -38,7 +38,7 @@ const Login = () => {
           </div>
           <div className="combined">
             <span className="already">Need an account?</span>
-            <a href="" className="registerpagelogin">
+            <a href="/register" className="registerpagelogin">
               Register Now
             </a>
           </div>

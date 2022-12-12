@@ -1,8 +1,6 @@
 import React from "react";
 import { chickenItems } from "../../data";
 import "./Chicken.css";
-
-import SearchIcon from "@mui/icons-material/Search";
 import Topbar from "../Topbar";
 import Navbar from "../Navbar";
 import Categorybar from "../Categorybar";
@@ -43,14 +41,14 @@ const Chicken = () => {
         <div className="chickenflex">
           {chickenItems.map(
             (item) => (
-              console.log(item),
+              console.log(item)
               (
                 <div className="popularfle">
                   <div className="popularcontainer">
                     <img
                       className="responsiveimage"
                       src={item.img}
-                      alt="image"
+                      alt="alternative"
                     />
                   </div>
                   <div className="popularitemtitle">{item.id}</div>

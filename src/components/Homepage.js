@@ -1,6 +1,4 @@
 import React from "react";
-import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
-import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import { useState } from "react";
 import { sliderItems } from "../data";
 import styled from "styled-components";
@@ -8,19 +6,15 @@ import "./Homepage.css";
 import "swiper/css";
 import { Navigation } from "swiper";
 import "swiper/css/bundle";
-
-import { useSwiper } from "swiper/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
 import "swiper/swiper-bundle.css";
 import Categories from "./Categories";
 import Topbar from "./Topbar";
 import Navbar from "./Navbar";
 import Categorybar from "./Categorybar";
-import Sidebar from "./Sidebar";
 const Homepage = () => {
-  const swiper = useSwiper();
-  const [slideIndex, setSlideIndex] = useState(0);
+  
+  const slideIndex = useState(0);
 
   const Wrapper = styled.div`
     height: 100%;
@@ -67,7 +61,7 @@ const Homepage = () => {
               >
                 {sliderItems.map(
                   (item) => (
-                    console.log(item),
+                    console.log(item)
                     (
                       <SwiperSlide>
                         <Wrapper slideIndex={slideIndex}>
@@ -76,7 +70,7 @@ const Homepage = () => {
                               <img
                                 className="responsiveimage"
                                 src={item.img}
-                                alt="image"
+                                alt="alternative"
                               />
                             </div>
                             <div className="popularitemtitle">{item.id}</div>

@@ -59,7 +59,7 @@
 }
 .check {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 0px;
   padding: 0px;
 }

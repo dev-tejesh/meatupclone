@@ -1,21 +1,16 @@
 import React from "react";
-import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
-import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
-import { useState } from "react";
-import { CategoriesItems, sliderItems } from "../data";
+import { CategoriesItems } from "../data";
 import styled from "styled-components";
 import "./Homepage.css";
 import "swiper/css";
 import { Navigation } from "swiper";
 import "swiper/css/bundle";
-
-import { useSwiper } from "swiper/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
 import "swiper/swiper-bundle.css";
 const Categories = () => {
-    const swiper = useSwiper();
-    const [slideIndex, setSlideIndex] = useState(0);
+    
+    // const [slideIndex, setSlideIndex] = useState(0);
+    const slideIndex = 0;
   
     const Wrapper = styled.div`
       height: 100%;
@@ -57,7 +52,7 @@ const Categories = () => {
               >
                 {CategoriesItems.map(
                   (item) => (
-                    console.log(item),
+                    console.log(item)
                     (
                       <SwiperSlide>
                         <Wrapper slideIndex={slideIndex}>
@@ -66,7 +61,7 @@ const Categories = () => {
                               <img
                                 className="responsiveimage"
                                 src={item.img}
-                                alt="image"
+                                alt="alternative "
                               />
                             </div>
                             <div style={{color:"red",paddingTop:"30px",paddingBottom:"30px",fontSize:"larger",fontWeight:"bold",textAlign:"center"}}>{item.title}</div>

@@ -29,6 +29,7 @@ const Buynow = () => {
                 <td className="nedflex">
                   <img
                     src="https://meatup.in/uploads/products/thumbnail/tAmyhqRo2S88fh4oLvMTOT8tjmeqwEeKZ1ZqIcFZ.jpeg"
+                    alt="alternative"
                     height={40}
                   />
 
